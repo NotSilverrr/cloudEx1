@@ -3,22 +3,22 @@ services:
     name: myweb
     runtime: node
     envVars:
-  - key: dbName
-    fromDatabase:
-      name: dbName
-      property: database
-  - key: dbUser
-    fromDatabase:
-      name: dbUser
-      property: user
-  - key: dbPassword
-    fromDatabase:
-      name: dbPassword
-      property: password
-  - key: hostName
-    fromDatabase:
-      name: hostName
-      property: host
+      - key: dbName
+        fromDatabase:
+          name: dbName
+          property: database
+      - key: dbUser
+        fromDatabase:
+          name: dbUser
+          property: user
+      - key: dbPassword
+        fromDatabase:
+          name: dbPassword
+          property: password
+      - key: hostName
+        fromDatabase:
+          name: hostName
+          property: host
       
 databases:
   - name: mydb
