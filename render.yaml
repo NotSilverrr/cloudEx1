@@ -5,6 +5,7 @@ services:
     buildCommand: npm install
     startCommand: npm start
     plan: free
+    region: frankfurt
     envVars:
       - key: DATABASE_URL
         fromDatabase:
