@@ -8,19 +8,19 @@ services:
     envVars:
       - key: dbName
         fromDatabase:
-          name: dbName
+          name: mydbname
           property: database
       - key: dbUser
         fromDatabase:
-          name: dbUser
+          name: mydbname
           property: user
       - key: dbPassword
         fromDatabase:
-          name: dbPassword
+          name: mydbname
           property: password
       - key: hostName
         fromDatabase:
-          name: hostName
+          name: mydbname
           property: host
       
 databases:
