@@ -7,14 +7,17 @@ services:
     fromDatabase:
       name: dbName
       property: database
+      type: pserv
   - key: dbUser
     fromDatabase:
       name: dbUser
       property: user
+      type: pserv
   - key: dbPassword
     fromDatabase:
       name: dbPassword
       property: password
+      type: pserv
       
 databases:
   - name: mydb
