@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: myweb
+    runtime: node
+    envVars:
+  - key: dbName
+    fromDatabase:
+      name: dbName
+      property: database
+  - key: dbUser
+    fromDatabase:
+      name: dbUser
+      property: user
+  - key: dbPassword
+    fromDatabase:
+      name: dbPassword
+      property: password
+      
+databases:
+  - name: mydb
